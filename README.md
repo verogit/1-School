@@ -14,13 +14,6 @@ The main functionalities</p>
       <li>List marks</li>
       <li>Send email to a teacher</li>
     </ul>
-    <h4>Student / Parent</h4>
-    <ul>
-      <li>Check timetable</li>
-      <li>List teachers</li>
-      <li>List marks</li>
-      <li>Send email to a teacher</li>
-    </ul>
     <h4>Teacher</h4>
     <ul>
       <li>List students</li>
@@ -28,7 +21,6 @@ The main functionalities</p>
       <li>Homework</li>
       <li>Send end email to a parent or student, also can send to both to the same time</li>
     </ul>
-    
     <h4>Administrator / Principal</h4>
     <ul>
       <li>Include users</li>
