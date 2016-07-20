@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* dawning-of-a-new-day-regular - latin */
+/* carme-regular - latin */
+@font-face {
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/carme-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Carme Regular'), local('Carme'),
+       url('../fonts/carme-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/carme-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/carme-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/carme-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/carme-v7-latin-regular.svg#Carme') format('svg'); /* Legacy iOS */
+}
+/* doppio-one-regular - latin */
+@font-face {
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/doppio-one-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Doppio One Regular'), local('DoppioOne-Regular'),
+       url('../fonts/doppio-one-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/doppio-one-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/doppio-one-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/doppio-one-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/doppio-one-v4-latin-regular.svg#DoppioOne') format('svg'); /* Legacy iOS */
+}
+
+/*GENERAL*/
+body {
+    margin: 0 auto;
+    width: 75%;
+    font-family:"Carme", Arial;
+    margin-bottom: 6%;
+}
+img {
+    height: auto;
+}
+
+div#content{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/*HEADER*/
+img#logo{
+    width: 16%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+header{
+    background: #d1eaec;
+}
+
+/*MENU*/
+a.sign_out{
+    float: right;
+    margin-top: -12%;
+    margin-right: 4%;
+    text-decoration: none;
+    font-family: Doppio One, Impact, sans-serif;
+    font-weight:900;
+    color: #0375b4;
+    font-size: 110%;
+    padding: 0.5%;
+}
+
+.topnav{
+    font-family: Doppio One, Impact, sans-serif;
+    margin-left: 16.8%;
+    font-size: 114%;
+    font-weight:900;
+    text-align: center;
+    padding: 0.8%;
+    color: #0375b4;
+    width: 80.7%;
+    float: left;
+    margin-top: -6.7%;
+}
+
+.topnav a{
+	text-decoration: none;
+    color: #0375b4;
+}
+
+.topnav li{
+	text-decoration: none;
+	display: inline;
+	padding: 0.5%;
+}
+/*CONTECT*/
+a.backButton{
+    text-decoration: none;
+    font-family: Doppio One, Impact, sans-serif;
+    font-size: 117%;
+    font-weight: 900;
+    color: #0375b4;
+}
+
+p.backButton{
+    margin-bottom: 1%;
+}
+
+a.newButton{
+    text-decoration: none;
+    font-family: Doppio One, Impact, sans-serif;
+    font-size: 117%;
+    font-weight: 900;
+    color: #46b946;
+}
+
+p.search{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+/*TABLE*/
+table#table {
+    width:100%;
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 77%;
+    margin-bottom: 3%;
+}
+table#table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #0375b4;
+    font-weight: 900;
+    padding: 0.6%;
+    text-align: center;
+}
+table#table tbody td {
+    border: solid 1px #DDEEEE;
+    padding: 0.9%;
+}
+table#table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#table tbody tr:nth-child(even) {
+    background-color: #EEF7EE;
+}
+table#table tbody td {
+    border-left: none;
+    border-right: none;
+    text-align:center;
+}
+
+a.editButton{
+    color:green;
+    text-decoration:none;
+}
+
+a.deleteButton{
+    color:red;
+    text-decoration:none;
+}
+
+/*CONTECT*//*welcome page admin*/
+img.imagesHome{
+    width: 73%;
+    margin-left:8%;
+}
+
+img.imagesWelcome{
+    width: 7.6%;
+    margin-left: 5%;
+}
+
+/*CONTECT*//*STUDENT*/
+/*HOMEWORK*/
+a.downloadButton{
+    color:red;
+    font-weight:900;
+}
+
+ul#classDetail{
+    padding: 1.5%;
+}
+
+ul#classDetail li{
+	display: inline;
+    padding: 2.5%;
+}
+
+/*table time add*/
+select#BX_start_time_hour, select#BX_start_time_minute, select#BX_finish_time_hour, select#BX_finish_time_minute{
+    width: 36%;
+    margin-left: 1%;
+    margin-right: 0%;
+}
+
+/*STUDENT*/
+/*TIMETABLE*/
+div.timetable{
+    margin-left: 38%;
+}
+p.day{
+    font-family: Doppio One, Impact, sans-serif;
+    font-weight:900;
+    color: #0375b4;
+    font-size: 110%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+p.time{
+        padding-bottom: 1.1%;
+}
+
+/*FORM*/
+form{
+    max-width: 50%;
+    padding: 2%;
+    color: #888;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding-left: 13%;
+    margin-left: 16%;
+}
+
+form input[type="text"], input[type="email"], input[type="DATE"], input[type="tel"], textarea, select, input[type="file"], input[type="password"]{
+    border: 1px solid #CCC;
+    height: -12%;
+    line-height: -16%;
+    margin-bottom: 2%;
+    margin-right: 18%;
+    margin-top: 1%;
+    padding: 1.7%;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+form select {
+    width: 73.6%;
+    margin-left: 1.5%;
+}
+
+form input[type="radio"], input[type="checkbox"]{
+    margin-bottom: 2%;    
+}
+
+form textarea{
+    padding: 1%;
+    width: 72.8%;
+}
+form button{
+    background: #d1eaec;
+    border: 1px solid #CCC;
+    padding-bottom: 1.4%;
+    padding-top: 1.4%;
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 34%;
+}
+input[type="button"], input[type="submit"]{
+    background: #d1eaec;
+    border: 1px solid #CCC;
+    padding-bottom: 1.4%;
+    padding-top: 1.4%;
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+form button:hover {
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+p#textform{
+    padding-bottom: 2%;
+    font-size: 79%;
+}
+
+/*TEACHER*/
+/*BUTTON*/
+a.button{
+background: #d1eaec;
+    border: 1px solid #CCC;
+    padding-bottom: 1.4%;
+    padding-top: 1.4%;
+    border-radius: 4px;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-decoration: none;
+}
+/*GRADE*/
+form#grade{
+    border: none; 
+    padding-left: 0;
+    margin-left: 24%;
+}
+
+/*FOOTER*/
+footer{
+    clear: both;
+    position: fixed;
+    bottom:0;
+    width: 75%;
+    height:9%;   /* Height of the footer */
+    background: #d1eaec;    
+    font-size: 80%;
+}
+
+table#footer{
+    width: 95%;
+    margin-top: 0.6%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+table#footer td p{
+    padding:0.5%;
+}
+/*PUBLIC PAGES*/
+
+/*HOME*/
+/*login*/
+div#login h1{
+    font-family: Doppio One, Impact, sans-serif;
+    font-weight:900;
+    color: #0375b4;
+    font-size: 110%;
+    margin-bottom: 3%;
+    margin-top: 2%;    
+}
+
+a.forgot{
+    font-family: Doppio One, Impact, sans-serif;
+    font-weight:900;
+    color: #0375b4;
+    font-size: 80%;
+    margin-bottom: 3%;
+    margin-top: 3%;        
+}
+
+div#login{
+    float:left;
+    margin-top:10%;
+}
+
+form#login{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:2%;
+}
+
+form#login button{
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+/*image*/
+img.Home{
+    float:right;
+    width: 67%;
+}
+
+/*ADMISSIONS*/
+article{
+ margin-left:5%;  
+ margin-bottom:2%;
+}
+
+article h1{
+    font-family: Doppio One, Impact, sans-serif;
+    font-weight: 900;
+    color: #0375b4;
+    font-size: 150%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+article h2{
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+article ul {
+    padding: 0;
+    margin: 0;
+}
+
+article li { 
+    padding-left: 2%; 
+}
+
+article li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 1%;
+    color: blue; /* Or a color you prefer */
+}
+
+article p{
+    margin-bottom:1%;
+text-align: justify;
+}
+/*phone mode*/
+ul.topnav li.icon, li.menu {display: none;}
+
+@media screen and (max-width:1185px) {
+    a.sign_out{
+    font-size: 70%;
+}
+
+.topnav{
+    font-size: 90%;
+
+}       
+}
+@media screen and (max-width:1330px) {
+    img.Home{
+        width:45%;
+    }
+}
+
+@media screen and (max-width:945px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+    ul.topnav li.menu {
+    display: inline-block;
+  }
+     div#login{
+       float:none;
+    }
+    
+    img.Home{
+        margin-top:3%;
+        float:none;
+    }
+
+}
+
+@media screen and (max-width:901px) {
+  ul.topnav.responsive {
+        position: relative;
+        background: #d1eaec;
+        width: 81.3%;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 35%;
+    top: -4.7%;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    margin-left: 27%;
+    margin-top: 3%;
+  }
+    ul.topnav.responsive li.separetion{display: none;}
+}
+
+
+
+
